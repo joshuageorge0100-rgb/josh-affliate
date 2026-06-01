@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSHUA DEALS -Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- js  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init({
+            publicKey: "rHERCYYhWe-Jf82x7",
+        });
+    })();
+</script>
+
+<body>
+      <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="logo">JOSHUA DEALS</div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+     
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- CONTACT SECTION -->
+
+  <section class="contact-section">
+
+    <div class="contact-container">
+
+      <h1>Contact Us</h1>
+
+      <p>
+        Have questions or need help? Send us a message.
+      </p>
+
+      <form>
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name">
+        </div>
+
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="input-group">
+          <label>Message</label>
+          <textarea placeholder="Write your message"></textarea>
+        </div>
+  <button type="submit" class="submit-btn" onclick="sendMail()">Submit</button>
+    </div>
+      </form>
+
+    </div>
+
+  </section>
+ <marquee behavior="scroll" direction="right">WE ARE THE BEST! SHOP NOW!  </marquee>
+  <!-- FOOTER -->
+
+  <footer>
+
+     <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> JOSHUA DEALS. All rights reserved.</p>
+        </div>
+
+  </footer>
+
+
+ 
+
+  <!-- JAVASCRIPT -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+  <script>
+
+    // TOGGLE MENU
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+  </script>
+<script src="file.js"></script>
+</body>
+</html>

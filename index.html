@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSHUA DEALS -Shop With Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="logo">JOSHUA DEALS</div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#">Home</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Latest Gadgets & Electronics</h1>
+
+      <p>
+        Shop smart phones, gaming laptops, smart watches,
+        headphones and more from trusted online stores.
+      </p>
+
+      <a href="https://solemn.com.ng/users/registration?referral_code=509PXLvgON" target="_blank" class="hero-btn">
+        Shop Now
+      </a>
+
+    </div>
+
+  </section>
+
+  <marquee behavior="scroll" direction="right">WE ARE THE BEST! SHOP NOW!  </marquee>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+     <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> JOSHUA DEALS. All rights reserved.</p>
+        </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+  <script>
+
+    // TOGGLE MENU
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+  </script>
+
+</body>
+</html>

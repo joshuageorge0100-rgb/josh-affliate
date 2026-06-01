@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOSHUA DEALS -Discover Affordable Product</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="logo">JOSHUA DEALS</div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+      <!-- LAPTOP -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200&auto=format&fit=crop"
+          alt="Laptop" />
+        <div class="product-info">
+          <h3>Dell Laptop</h3>
+          <p>High-performance laptop for work and gaming.</p>
+
+          <a href="https://solemn.com.ng/users/registration?referral_code=509PXLvgON" target="_blank" rel="noopener noreferrer">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- DESKTOP -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?q=80&w=1200&auto=format&fit=crop"
+          alt="Desktop Computer" />
+        <div class="product-info">
+          <h3>Desktop Computer</h3>
+          <p>Fast desktop setup for office and business use.</p>
+
+          <a href="https://solemn.com.ng/users/registration?referral_code=509PXLvgON" target="_blank" rel="noopener noreferrer">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- MOUSE -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1200&auto=format&fit=crop"
+          alt="Mouse" />
+        <div class="product-info">
+          <h3>Wireless Mouse</h3>
+          <p>Comfortable wireless mouse with smooth control.</p>
+
+          <a href="https://solemn.com.ng/users/registration?referral_code=509PXLvgON" target="_blank" rel="noopener noreferrer">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- KEYBOARD -->
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?q=80&w=1200&auto=format&fit=crop"
+          alt="Keyboard" />
+        <div class="product-info">
+          <h3>Mechanical Keyboard</h3>
+          <p>RGB mechanical keyboard for gaming and typing.</p>
+
+          <a href="https://solemn.com.ng/users/registration?referral_code=509PXLvgON" target="_blank" rel="noopener noreferrer">Buy Now</a>
+        </div>
+      </div>
+
+
+
+      <!-- PHONE -->
+      <!-- <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop"
+          alt="Samsung Phone" />
+        <div class="product-info">
+          <h3>Samsung Smartphone</h3>
+          <p>Powerful smartphone with crystal clear display.</p>
+
+          <a href="https://example.com" target="_blank" rel="noopener noreferrer">Buy Now</a>
+        </div> -->
+
+
+      <!-- TV -->
+      <!-- <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1200&auto=format&fit=crop"
+            alt="Samsung TV" />
+          <div class="product-info">
+            <h3>Samsung Smart TV</h3>
+            <p>Ultra HD Smart TV with immersive display quality.</p>
+
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer">Buy Now</a>
+          </div>
+        </div> -->
+
+      <!-- FRIDGE -->
+      <!-- <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?q=80&w=1200&auto=format&fit=crop"
+            alt="Refrigerator" />
+          <div class="product-info">
+            <h3>Double Door Refrigerator</h3>
+            <p>Energy-saving refrigerator with modern design.</p>
+
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer">Buy Now</a>
+          </div>
+        </div> -->
+
+      <!-- FASHION -->
+      <!-- <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop"
+            alt="Fashion" />
+          <div class="product-info">
+            <h3>Fashion Wear</h3>
+            <p>Premium quality fashion collections for all styles.</p>
+
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer">Buy Now</a>
+          </div>
+        </div>  -->
+
+    </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <marquee behavior="scroll" direction="right">WE ARE THE BEST! SHOP NOW! </marquee>
+  <footer>
+
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> JOSHUA DEALS. All rights reserved.</p>
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+
+  <script>
+
+    // TOGGLE MENU
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+  </script>
+
+</body>
+
+</html>
